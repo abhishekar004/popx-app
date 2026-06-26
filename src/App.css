@@ -1,0 +1,47 @@
+.phone-frame {
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #f7f8f9;
+  position: relative;
+}
+
+.btn {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #6c3ce1;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #c9b8f0;
+  color: #1a1a2e;
+}
+
+.btn-disabled {
+  background: #b0b0b0;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.screen-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.25;
+}
+
+.screen-subtext {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
