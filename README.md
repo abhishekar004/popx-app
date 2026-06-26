@@ -1,16 +1,51 @@
-# React + Vite
+# PopX Mobile Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+PopX is a mobile-first web application featuring a sleek UI for user authentication and profile management. 
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Follow these step-by-step instructions to run the project locally:
 
-## React Compiler
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/abhishekar004/popx-app.git
+   cd popx-app
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Install dependencies:**
+   Make sure you have Node.js installed. Run the following command to install required packages:
+   ```bash
+   npm install
+   ```
 
-## Expanding the Oxlint configuration
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+4. **View the application:**
+   Open your browser and navigate to the local URL provided in your terminal (usually `http://localhost:5173`).
+
+## Technologies Used
+
+* **React:** Core framework for building the user interface.
+* **React Router DOM:** Used for client-side routing and navigation between pages.
+* **Vanilla CSS Variables:** Utilized for a flexible and maintainable design system and styling.
+* **Custom SVGs:** Integrated for lightweight, crisp, and scalable iconography.
+* **LocalStorage:** Employed for simulating client-side data persistence for user profiles.
+
+## Properties & Features
+
+* **Mobile Frame Simulation:** The application is constrained to a mobile-like frame, providing an authentic app-like experience on desktop browsers.
+* **Material-style Floating Labels:** Input fields feature elegant, animated floating labels for a modern aesthetic.
+* **Validation States:** Real-time form validation providing immediate visual feedback to the user during sign-up and login.
+* **Mock Database Lookup:** Simulates backend interactions by looking up registered user data from local storage.
+* **Dynamic Profile Mapping:** User profile data is dynamically rendered based on the authenticated user's details.
+* **Reload Redirect Protection:** Safeguards against unwanted state loss by managing redirection logic upon manual page reloads.
+
+## Drawbacks
+
+* **Mock Client-Side Database:** Data is stored locally in the browser's `localStorage`, meaning it does not persist across different devices or browsers and is not secure for real-world applications.
+* **No JWT Auth:** Authentication is simulated and lacks robust security mechanisms like JSON Web Tokens (JWT).
+* **Destructive Reloads:** Manually reloading the page might lead to state reset depending on the router configuration and context state.
+* **Fixed 390px Responsive Width Bounds:** The application is explicitly designed for a fixed maximum width of 390px to simulate a mobile device, which may not utilize larger screens effectively.
